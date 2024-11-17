@@ -593,8 +593,7 @@ class PrintNightmare:
                     )
             i += 1
 
-
-if __name__ == "__main__":
+def main():
     print(version.BANNER)
 
     logger.init()
@@ -758,3 +757,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     print_nightmare.exploit(options.name, options.env, options.path, options.dll)
+
+
+if __name__ == "__main__":
+    main()
